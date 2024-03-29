@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse statistique Dimako</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="presentation.html"><img src="../img/logo.jpg" height="70"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../presentation.html">Accueil</a>
+                </li>
+             
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Entrée et sortie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="machines_tournantes.html">Machines tournantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bilan_energetique.html">Bilan énergétique</a>
+                </li>
+             
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-3"> 
+    <ul class="nav nav-tabs mt-4" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Analyse</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Source des données</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Questions / Remarques</button>
+        </li>
+      
+      </ul>
+      <div class="tab-content mt-4" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <img src="../img/entree_station_avril_novembre.png" class="img-fluid mb-4">
+            <hr>
+            <img src="../img/exemple_entree_sortie_avril_juin.png" class="img-fluid mb-4 mt-4">
+            <hr>
+            <img src="../img/entree_sortie_station_total.png" class="img-fluid mb-4 mt-4">
+            <hr>
+            <img src="../img/entree_precipitation.png" class="img-fluid mb-4 mt-4">
+            <p class="text-center">Valeurs de Y normalisées</p>
+            <hr>
+            <img src="../img/sortie_precipitation.png" class="img-fluid mb-4 mt-4">
+            <p class="text-center">Valeurs de Y normalisées</p>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <h6>Donnnées provenant de la page 1 du rapport</h3>
+            <img src="../img/exemple_entree_sortie.jpg" class="img-fluid mb-4 mt-4">
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table">
+                        <tbody>
+                        <tr class="table-secondary">
+                            <td>Données manquantes Entrée</td>
+                            <td>%</td>
+                        </tr>
+                        <tr>
+                            <td>Total_entrée_moy</td>
+                            <td>5.37</td>
+                        </tr>
+                        <tr>
+                            <td>Débit_entrée_moy</td>
+                            <td>23.14</td>
+                        </tr>
+                        <tr>
+                            <td>Débit_entrée_min</td>
+                            <td>23.14</td>
+                        </tr>
+                        <tr>
+                            <td>Débit_entrée_max</td>
+                            <td>23.14</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>18.7</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="col-md-6">
+                    <table class="table">
+                        <tbody>
+                        <tr class="table-secondary">
+                            <td>Données manquantes Sortie</td>
+                            <td>%</td>
+                        </tr>
+                        <tr>
+                            <td>Total_entrée_moy</td>
+                            <td>71.90</td>
+                        </tr>
+                        <tr>
+                            <td>Débit_entrée_moy</td>
+                            <td>73.55</td>
+                        </tr>
+                        <tr>
+                            <td>Débit_entrée_min</td>
+                            <td>73.55</td>
+                        </tr>
+                        <tr>
+                            <td>Débit_entrée_max</td>
+                            <td>73.55</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>73.14</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--<div class="alert alert-secondary" role="alert">-->
+                <h3 class="mt-3"><span class="badge text-bg-secondary">Questions</span></h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item list-group-item-secondary">Pourquoi les données en sortie ne sont-elles présentes que jusqu'au 10 juin ? 
+                            <p class="text-danger ">Démantèlement du système suite à l'obtention de la réception provisoire et de plus nous n'avons pas reconduit le système VSAT après une panne signalée.</p>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary">Est-ce que la variable « Total entrée - Val Moy m3 » est une valeur cumulée ?
+                            <p class="text-danger mb-0 pb-0">Oui il s'agit d'une valeur cumulée quotidienne.</p>
+                            <p class="text-success pt-0 mt-0">Qu'est-ce qui explique les valeurs inférieures à la précédente ? <br/> <span class="text-danger">Les données ne sont pas significatives jusque juin car elles correspondent au démarrage de la station.</span></p>
+
+                        </li>
+                        <li class="list-group-item list-group-item-secondary">Pourquoi toutes les données d'entrée /sortie des variables PH, Turb, Chlore, sont-elles manquantes pour toute la période ? <p class="text-danger">Nous avons rencontré un problème d’étalonnage pour ces instruments.</p> </li>
+                        <li class="list-group-item list-group-item-secondary" >Les valeurs de débit Moy, Min et Max sont souvent identiques, est-ce normal ? 
+                            <p class="text-danger mb-0 pb-0">Non sauf en cas d’arrêt</p>
+                            <p class="text-success pt-0 mt-0">Cela signifie-t-il que la station est à l'arrêt chaque fois que les valeurs sont identiques même quand elles sont supérieures à zéro ?<br/>
+                            <span class="text-danger">Oui, mais cela peut aussi correspondre à un léger filet d'eau. Il y a eu également des soucis sur les compteurs pendant la période de test.</span></p>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary" >Les valeurs d'entrée et sortie Total m3 à zéro, correspondent-elles à des arrêts ? <p class="text-danger">En effet ces sont des arrêts. </p></li>
+                        <li class="list-group-item list-group-item-secondary" >Pourquoi l'échelle de valeurs est-elle + de 10x supréreure en sortie m3, y a-t-il des remises à zéro ?
+                            <p class="text-danger pt-0 mt-0">Oui, il y a eu des resets mais aussi une sonde noyée, cela est probablement dû à ce problème.</p>
+                        </li>
+                    </ol>
+
+                    <!-- <h3 class="mt-3"><span class="badge text-bg-secondary">Remarques</span></h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item list-group-item-secondary">Il n'est pas pertinent de croiser les données pluviométriques avec les débits entrants et sortants car ceux-ci sont définis manuellement</li>
+                       
+                    </ol> -->
+                
+             
+            <!--</div>-->
+        </div>
+        
+      </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

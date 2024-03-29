@@ -1,0 +1,5 @@
+
+  .list-group-item-secondary {
+    background-color: inherit; /* Pour hériter du fond de l'élément parent */
+    border: none !important; /* Optionnel: supprimez les bordures si nécessaire */
+  }
